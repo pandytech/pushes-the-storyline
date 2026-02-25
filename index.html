@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="GTA San Andreas Missions List, Rewards & Tips Guide">
+    <meta name="description" content="Complete GTA San Andreas missions list with rewards, unlockable, and pro tips to finish every story mission smoothly and reach 100% completion.">
+    <title>GTA San Andreas Missions List, Rewards & Tips Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 3px solid #ff6b35;
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ff6b35;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .meta-info {
+            font-size: 0.95em;
+            color: #b0b0b0;
+            margin-top: 10px;
+        }
+
+        .intro-section {
+            background: rgba(255, 107, 53, 0.1);
+            border-left: 5px solid #ff6b35;
+            padding: 25px;
+            margin-bottom: 50px;
+            border-radius: 4px;
+        }
+
+        .intro-section p {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #d0d0d0;
+        }
+
+        .mission-region {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .region-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ff6b35;
+        }
+
+        .region-number {
+            width: 60px;
+            height: 60px;
+            background: #ff6b35;
+            color: #1a1a2e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .region-header h2 {
+            font-size: 2em;
+            color: #ff6b35;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .region-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .mission-description {
+            background: rgba(255, 107, 53, 0.05);
+            padding: 25px;
+            border-radius: 4px;
+            border-top: 3px solid #ff6b35;
+        }
+
+        .mission-description p {
+            color: #d0d0d0;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .rewards-list {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .rewards-list h4 {
+            color: #ff6b35;
+            margin-bottom: 12px;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .rewards-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .rewards-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            color: #c0c0c0;
+            font-size: 0.9em;
+        }
+
+        .rewards-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #ff6b35;
+            font-weight: bold;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.15) 0%, rgba(255, 107, 53, 0.05) 100%);
+            border-left: 4px solid #ff6b35;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .tip-box h5 {
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tip-box p {
+            color: #d0d0d0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .efficiency-section {
+            background: rgba(255, 107, 53, 0.08);
+            padding: 40px;
+            border-radius: 4px;
+            margin: 60px 0;
+            border: 2px solid rgba(255, 107, 53, 0.3);
+        }
+
+        .efficiency-section h3 {
+            color: #ff6b35;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .efficiency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .efficiency-item {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 4px;
+            border-left: 3px solid #ff6b35;
+        }
+
+        .efficiency-item h4 {
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .efficiency-item p {
+            color: #c0c0c0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .conclusion {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(255, 107, 53, 0.1) 100%);
+            padding: 40px;
+            border-radius: 4px;
+            margin-top: 60px;
+            border: 2px solid rgba(255, 107, 53, 0.4);
+            text-align: center;
+        }
+
+        .conclusion p {
+            color: #d0d0d0;
+            font-size: 1.05em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .conclusion a {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .conclusion a:hover {
+            color: #ff8c5a;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .region-header h2 {
+                font-size: 1.5em;
+            }
+
+            .region-content {
+                grid-template-columns: 1fr;
+            }
+
+            .efficiency-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .region-number {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Complete GTA San Andreas Missions List</h1>
+            <p class="meta-info">(With Rewards & Tips)</p>
+        </header>
+
+        <div class="intro-section">
+            <p>The GTA San Andreas missions list is one of the most extensive in the Grand Theft Auto series. With over 100 story missions, players follow Carl "CJ" Johnson as he rises through the criminal underworld across Los Santos, San Fierro, and Las Venturas. Each mission pushes the storyline forward while unlocking new locations, abilities, properties, and income opportunities.</p>
+        </div>
+
+        <div class="mission-region">
+            <div class="region-header">
+                <div class="region-number">01</div>
+                <h2>Los Santos Missions</h2>
+            </div>
+            <div class="region-content">
+                <div class="mission-description">
+                    <p>The game begins in Los Santos, where CJ reconnects with the Grove Street Families. Early missions like "Big Smoke," "Ryder," and "Tagging Up Turf" introduce core mechanics including shooting, driving, and territory control. As the story progresses, players take on high-stakes assignments like "Reuniting the Families" and "The Green Sabre."</p>
+                    <div class="rewards-list">
+                        <h4>Rewards</h4>
+                        <ul>
+                            <li>Unlocking new weapons</li>
+                            <li>Respect and stamina boosts</li>
+                            <li>Access to new city areas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tip-box">
+                    <h5>Pro Tip</h5>
+                    <p>Focus on improving weapon skills early. Higher weapon proficiency improves accuracy and reduces recoil during intense firefights.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mission-region">
+            <div class="region-header">
+                <div class="region-number">02</div>
+                <h2>San Fierro Missions</h2>
+            </div>
+            <div class="region-content">
+                <div class="mission-description">
+                    <p>After major events in Los Santos, CJ moves to San Fierro. Missions such as "Wear Flowers in Your Hair," "555 We Tip," and "Photo Opportunity" expand gameplay with stealth, photography, and infiltration elements. This stage also introduces asset-building through businesses like the garage in Doherty.</p>
+                    <div class="rewards-list">
+                        <h4>Rewards</h4>
+                        <ul>
+                            <li>New safehouses</li>
+                            <li>Business income</li>
+                            <li>Access to Zero's missions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tip-box">
+                    <h5>Pro Tip</h5>
+                    <p>Invest time in side activities to increase stamina and driving skills before tackling more difficult operations in this region.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mission-region">
+            <div class="region-header">
+                <div class="region-number">03</div>
+                <h2>Las Venturas Missions</h2>
+            </div>
+            <div class="region-content">
+                <div class="mission-description">
+                    <p>Las Venturas focuses heavily on casino operations and large-scale heists. Missions like "Fender Ketchup," "Explosive Situation," and "Breaking the Bank at Caligula's" require strategic planning and preparation.</p>
+                    <div class="rewards-list">
+                        <h4>Rewards</h4>
+                        <ul>
+                            <li>Major cash payouts</li>
+                            <li>Unlocking high-end vehicles</li>
+                            <li>Stronger gang influence</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tip-box">
+                    <h5>Pro Tip</h5>
+                    <p>Complete preparation missions carefully before attempting the casino heist. Stock up on armor and weapons to avoid mission failure late in the sequence.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mission-region">
+            <div class="region-header">
+                <div class="region-number">04</div>
+                <h2>Final Los Santos Return</h2>
+            </div>
+            <div class="region-content">
+                <div class="mission-description">
+                    <p>CJ eventually returns to Los Santos for climactic missions such as "Home Coming" and "End of the Line." These final chapters wrap up long-running rivalries and determine the fate of Grove Street.</p>
+                    <div class="rewards-list">
+                        <h4>Rewards</h4>
+                        <ul>
+                            <li>Massive respect boost</li>
+                            <li>Final storyline completion</li>
+                            <li>Full map control</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tip-box">
+                    <h5>Pro Tip</h5>
+                    <p>Keep your health, armor, and ammunition maxed before the final mission. The last sequence includes multiple waves of enemies.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="efficiency-section">
+            <h3>How to Complete All Missions Efficiently</h3>
+            <div class="efficiency-grid">
+                <div class="efficiency-item">
+                    <h4>Build Stamina</h4>
+                    <p>Increase stamina through cycling and running.</p>
+                </div>
+                <div class="efficiency-item">
+                    <h4>Upgrade Skills</h4>
+                    <p>Upgrade weapon skills regularly.</p>
+                </div>
+                <div class="efficiency-item">
+                    <h4>Purchase Properties</h4>
+                    <p>Purchase properties to save progress frequently.</p>
+                </div>
+                <div class="efficiency-item">
+                    <h4>Multiple Saves</h4>
+                    <p>Keep multiple save files before difficult missions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="conclusion">
+            <p>Completing the full GTA San Andreas missions list takes dedication, but the rewards are worth the effort. From gang wars to casino heists, every mission adds depth to CJ's journey. By following these mission tips and understanding unlockable rewards, players can achieve 100% completion with confidence and enjoy one of the most iconic open-world adventures ever created.</p>
+            <p>Players experiencing the game on <a href="https://gtasandresapk.com/gta-san-andreas-pc/">GTA San Andreas PC</a> often benefit from improved controls, better graphics settings, and mod support, which can enhance mission performance and replay value.</p>
+        </div>
+    </div>
+</body>
+</html>
